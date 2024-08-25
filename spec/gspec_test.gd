@@ -94,9 +94,11 @@ func run_tests():
 
 func _init():
   run_tests()
+  var result = 0
   if passing:
     print("PASSING")
   else:
     print("FAILING")
+    result = 1
 
-  quit()
+  quit(result)
