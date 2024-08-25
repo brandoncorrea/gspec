@@ -17,8 +17,6 @@ jobs:
         run: |
           sudo apt-get install snapd
           sudo snap install godot-4
-          snap list godot-4
-          echo "$(/snap/bin/godot-4 --version)"
 
       - name: Run Specs
         run: /snap/bin/godot-4 --headless -s spec/gspec_test.gd
