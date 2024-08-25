@@ -6,7 +6,7 @@ A simple testing library for Godot.
 
 ## Install
 
-Copy the addons/gspec directory from this project into your project's addons directory.
+Copy the `addons/gspec` directory from this project into your project's `addons` directory.
 
 ## Usage
 
@@ -22,7 +22,7 @@ In the root of your project, create a `spec` directory and a `*_spec.gd` file an
 
 For example: `spec/example_spec.gd`
 
-```python
+```gdscript
 extends "res://addons/gspec/gspec.gd"
 
 func test_fails():
@@ -34,7 +34,7 @@ func test_fails():
 
 You may optionally add behavior to execute `before` and `after` your tests.
 
-```python
+```gdscript
 extends "res://addons/gspec/gspec.gd"
 
 func before():
