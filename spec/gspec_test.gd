@@ -80,7 +80,7 @@ func executes_after_all_tests():
     "\nafter_all\n" + \
     format_green_line("  test_after_first") + \
     format_green_line("  test_after_second") + \
-    "i only print once\n")
+    "i only print oce\n")
 
 func run_tests():
   no_summary_when_no_tests_defined()
