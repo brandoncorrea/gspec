@@ -21,7 +21,6 @@ jobs:
       - name: Run Specs
         run: |
           /snap/bin/godot-4 --headless -s spec/gspec_test.gd
-          if [ "$?" != 0 ]; then
+          if [ $? != 0 ]; then
             exit $?
           fi
-
