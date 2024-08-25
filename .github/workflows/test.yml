@@ -16,5 +16,5 @@ jobs:
       - name: Install Godot
         run: |
           sudo apt-get install snapd
-          sudo apt-get install godot-4
+          sudo snap install godot-4
           echo "$(godot --version)"
