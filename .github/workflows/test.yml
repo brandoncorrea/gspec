@@ -8,19 +8,18 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
 
     steps:
       - uses: actions/checkout@v4
 
       - name: Install Godot
         run: |
-          sudo apt-get install snapd
-          sudo snap install godot-4
+          brew install godot -y
 
       - name: Run Specs
         run: |
-          /snap/bin/godot-4 --headless -s spec/gspec_test.gd
+          godot --headless -s spec/gspec_test.gd
           EXIT_CODE=$?
           echo $EXIT_CODE
           if [ $EXIT_CODE -ne 0 ]; then
