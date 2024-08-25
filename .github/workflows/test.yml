@@ -21,8 +21,9 @@ jobs:
       - name: Run Specs
         run: |
           /snap/bin/godot-4 --headless -s spec/gspec_test.gd
-          echo $?
-          if [ $? != 0 ]; then
+          EXIT_CODE=$?
+          echo $EXIT_CODE
+          if [ $EXIT_CODE -ne 0 ]; then
             echo "this failed..."
-            exit $?
+            exit $EXIT_CODE
           fi
