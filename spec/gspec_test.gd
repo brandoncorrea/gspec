@@ -99,6 +99,6 @@ func _init():
     print("PASSING")
   else:
     print("FAILING")
-    result = 1
+    result = -1
 
   quit(result)
