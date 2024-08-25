@@ -1,0 +1,20 @@
+name: Run Tests
+
+on:
+  push:
+    branches: [ master ]
+  pull_requests:
+    branches: [ master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Godot
+        run: |
+          sudo apt-get install snapd
+          sudo apt-get install godot-4
+          echo "$(godot --version)"
