@@ -101,4 +101,5 @@ func _init():
     print("FAILING")
     result = -1
 
+  print("RESULT: ", result)
   quit(result)
