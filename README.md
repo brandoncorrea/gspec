@@ -2,6 +2,8 @@
 
 A simple testing library for Godot.
 
+[![Run Tests](https://github.com/brandoncorrea/gspec/actions/workflows/test.yml/badge.svg)](https://github.com/brandoncorrea/gspec/actions/workflows/test.yml)
+
 ## Install
 
 Copy the addons/gspec directory from this project into your project's addons directory.
