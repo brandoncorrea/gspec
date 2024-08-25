@@ -10,7 +10,7 @@ Copy the addons/gspec directory from this project into your project's addons dir
 
 To run your tests, execute this in the command line:
 
-```
+```console
 godot --headless -s addons/gspec/run_specs.gd
 ```
 
@@ -20,7 +20,7 @@ In the root of your project, create a `spec` directory and a `*_spec.gd` file an
 
 For example: `spec/example_spec.gd`
 
-```godot
+```python
 extends "res://addons/gspec/gspec.gd"
 
 func test_fails():
@@ -32,7 +32,7 @@ func test_fails():
 
 You may optionally add behavior to execute `before` and `after` your tests.
 
-```godot
+```python
 extends "res://addons/gspec/gspec.gd"
 
 func before():
@@ -61,6 +61,6 @@ func test_fails():
 
 ### Tests
 
-```
+```console
 godot --headless -s spec/gspec_test.gd
 ```
