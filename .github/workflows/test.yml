@@ -15,7 +15,7 @@ jobs:
 
       - name: Install Godot
         run: |
-          brew install godot -y
+          brew install godot
 
       - name: Run Specs
         run: |
